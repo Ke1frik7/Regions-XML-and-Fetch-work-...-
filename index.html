@@ -9,18 +9,57 @@
 </head>
 <body>
     
-    <form action="" class="p-1 form-control mt-2 d-flex forms" style="width: 70%;
+    <div class="container">
+        <form action="" class="p-1 form-control mt-2 d-flex forms" style="width: 70%;
     margin: 0 auto;">
         <input type="text" placeholder="Search region" class="form-control m-2 inputs">
         <button class="btn btn-primary m-2">Submit</button>
     </form>
-    <form class="form-control mt-2 d-flex" id="renders_form">
+    </div>
+   <div class="container">
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Accordion Item #1
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"> </div>
+          </div>
+        </div>
+   </div>
+
+    <div class="container">
+        <div class="result" style="display: flex; flex-wrap: wrap;">
+            <template>
+                <div class="card text text-center p-2" style="width: 30%;">
+                    <img src="" alt="card-image" class="card-img">
+                    <div class="card-text">
+                        <h2 class="card-title">
+                            Name
+                        </h2>
+                        <h4>lang = <span id="card-lang"> .. </span></h4>
+                        <button class="btn btn-primary locals">Locals</button>
+                    </div>
+                </div>
+            </template>
+        </div>
+    </div>
+    <!-- <form class="form-control mt-2 d-flex" id="renders_form">
         <input type="text" id="input_2" class="form-control m-2">
         <button class="btn btn-success m-2">Submit</button>
     </form>
-
+    <div class="parent"></div>
+    <template>
+        <p id="result"></p>
+    </template> -->
+    <!-- <input type="text" id="qidir_input">
+    <button id="qidir_btn">Bos</button> -->
+    <script src="./utils.js"></script>
+    <script src="./object.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-    <!-- <script src="/utils.js"></script> -->
+    
     <script src="./main.js"></script>
 </body>
 </html>

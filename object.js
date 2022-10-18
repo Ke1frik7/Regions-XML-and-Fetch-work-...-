@@ -1,4 +1,4 @@
-[
+let object = [
     {
         name: "Doston",
         age: 15
